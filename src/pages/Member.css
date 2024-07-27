@@ -33,3 +33,7 @@
     display: block;
     padding: 15px;
 }
+
+.member .newMember{
+    text-align: left;
+}
