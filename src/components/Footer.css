@@ -1,0 +1,17 @@
+footer{
+    background-color: var(--third);
+    color: var(--first);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>*{text-align: left;width: 30vw;}
+footer .socials{text-align: left;width: 40vw;}
+
+footer .socials ul{display: flex;flex-direction: column;}
+footer .socials ul li{height: 30px;padding: 20px 0px;}
+
+footer *{list-style: none;}

@@ -1,0 +1,60 @@
+.title{
+    background-color: #aa6600;
+    height: 80vh;
+    padding: 100px 50px;
+    text-align: left;
+    display: block;
+    font-size: 30px;
+}
+
+button.Donate{
+    padding: 15px 25px;
+    border-radius: 20px;
+    max-width: 30%;
+    border: 0;
+    background-color: var(--third);
+    font-size: 20px;
+    color: var(--first);
+}
+
+.title span{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.aboutUs, .whatWeDo{
+    padding: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.aboutUs{display: flex;flex-direction: row;align-items: center;padding: 0;}
+
+.aboutUs h2, .whatWeDo h2{
+    padding: 20px 0px;
+}
+
+.aboutUs .Text{padding: 50px;}
+
+.banner{
+    padding: 0px 10px;
+    margin: 0;
+    height: 800px;
+    width: 100%;
+}
+.banner ul{
+    list-style: none;
+    background-color: var(--third);
+    color: var(--first);
+    border-radius: 0px 0px 30px 30px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+}
+
+.banner li{border-left: 5px solid var(--first) !important;padding:2px 0px 10px 10px;}

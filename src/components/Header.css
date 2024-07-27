@@ -1,0 +1,36 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--second);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 10vh;
+}
+
+header .logo{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+li a{font-style: none;text-decoration: none;color: black;transition: 0.5s ease;}
+li a:hover{color: #553300;}
+
+header button{
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--third);
+    font-size: 20px;
+    color: var(--first);
+}
