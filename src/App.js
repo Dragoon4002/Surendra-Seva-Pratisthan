@@ -8,6 +8,9 @@ import Objective from './pages/Objective';
 import Member from './pages/Member';
 import Testimonial from './pages/Testimonial';
 import Gallery from './pages/Gallery';
+import ContactUs from './pages/ContactUs';
+import Feedback from './pages/Feedback';
+import Donation from './pages/Donation';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/contactUs" element={<ContactUs/>} />
+        <Route path="/feedback" element={<Feedback/>} />1
+        <Route path="/donation" element={<Donation/>} />
       </Routes>
     </div>
   );

@@ -6,12 +6,18 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-height: 500px;
 }
 
-footer>*{text-align: left;width: 30vw;}
+footer>div{text-align: left;display: flex;flex-direction: column;justify-content: flex-start;height: 300px;}
+footer>div:nth-of-type(1){width: 30vw;}
+footer>div:not(:nth-of-type(1)){width: 15vw;}
 footer .socials{text-align: left;width: 40vw;}
 
 footer .socials ul{display: flex;flex-direction: column;}
 footer .socials ul li{height: 30px;padding: 20px 0px;}
+
+li a{font-style: none;text-decoration: none;color: var(--first);transition: 0.5s ease;}
+li a:hover{color: #ffaaaa;}
 
 footer *{list-style: none;}

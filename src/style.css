@@ -5,3 +5,7 @@
     --second: #EE8844;
     --third: #7F2000;
 }
+
+@media screen and (max-width: 768px){
+    html{width: 100%;}
+}

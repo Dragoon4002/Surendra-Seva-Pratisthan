@@ -58,3 +58,8 @@ button.Donate{
 }
 
 .banner li{border-left: 5px solid var(--first) !important;padding:2px 0px 10px 10px;}
+
+
+@media screen and (max-width: 768px){
+    .banner{display: none;}
+}

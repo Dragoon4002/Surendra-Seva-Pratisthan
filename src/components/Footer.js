@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import './Footer.css'
 
@@ -18,12 +19,19 @@ const Footer = () => {
         <div className='Menu'>
             <h3>Menu</h3>
             <ul>
-                <li>Home</li>
-                <li>Activities</li>
-                <li>Objective</li>
-                <li>Members</li>
-                <li>Testimonials</li>
-                <li>Gallery</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/activities">Activities</Link></li>
+                <li><Link to="/objective">Objective</Link></li>
+                <li><Link to="/members">Members</Link></li>
+                <li><Link to="/testimonials">Testimonials</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+            </ul>
+        </div>
+        <div className='extra Menu'>
+            <h3>Special Menu</h3>
+            <ul>
+                <li><Link to="/contactus">Contact Us</Link></li>
+                <li><Link to="/feedback">Feedback Form</Link></li>
             </ul>
         </div>
     </footer>
