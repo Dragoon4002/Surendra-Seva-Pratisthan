@@ -61,5 +61,11 @@ button.Donate{
 
 
 @media screen and (max-width: 768px){
-    .banner{display: none;}
+    .title{font-size: small;height: 70vh;display: flex;justify-content: end;padding: 0;background-image: linear-gradient( #00000000 30%, #00000088 50%, #000000 100%); color: var(--first);}
+    .title span{width: 100%;height: 30vh;align-self: flex-end;margin: 20px;}
+    .title span button{width: 50vw;padding: 10px 0px;max-width: 50%;font-size: small;}
+    .aboutUs{flex-direction: column-reverse;font-size: small;}
+    .aboutUs .banner{height: 30vh;}
+    .aboutUs .banner ul{height: 30vh;}
+    .aboutUs .Text{padding: 20px;}
 }

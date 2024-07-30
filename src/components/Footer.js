@@ -17,22 +17,24 @@ const Footer = () => {
             </ul>
         </div>
         <div className='Menu'>
-            <h3>Menu</h3>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/activities">Activities</Link></li>
-                <li><Link to="/objective">Objective</Link></li>
-                <li><Link to="/members">Members</Link></li>
-                <li><Link to="/testimonials">Testimonials</Link></li>
-                <li><Link to="/gallery">Gallery</Link></li>
-            </ul>
-        </div>
-        <div className='extra Menu'>
-            <h3>Special Menu</h3>
-            <ul>
-                <li><Link to="/contactus">Contact Us</Link></li>
-                <li><Link to="/feedback">Feedback Form</Link></li>
-            </ul>
+            <div className='mainMenu'>
+                <h3>Menu</h3>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/activities">Activities</Link></li>
+                    <li><Link to="/objective">Objective</Link></li>
+                    <li><Link to="/members">Members</Link></li>
+                    <li><Link to="/testimonials">Testimonials</Link></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
+                </ul>
+            </div>
+            <div className='extraMenu'>
+                <h3>Special Menu</h3>
+                <ul>
+                    <li><Link to="/contactus">Contact Us</Link></li>
+                    <li><Link to="/feedback">Feedback Form</Link></li>
+                </ul>
+            </div>
         </div>
     </footer>
   )

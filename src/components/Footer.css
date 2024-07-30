@@ -5,19 +5,44 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-height: 500px;
 }
 
-footer>div{text-align: left;display: flex;flex-direction: column;justify-content: flex-start;height: 300px;}
-footer>div:nth-of-type(1){width: 30vw;}
-footer>div:not(:nth-of-type(1)){width: 15vw;}
-footer .socials{text-align: left;width: 40vw;}
+footer>div{text-align: left;display: flex;justify-content: flex-start;width: 40vw;}
+footer .socials{flex-direction: column;}
+footer .Menu{flex-direction: row;justify-content: space-evenly;}
 
 footer .socials ul{display: flex;flex-direction: column;}
-footer .socials ul li{height: 30px;padding: 20px 0px;}
+footer .socials ul li{
+    height: fit-content;
+    margin: 10px 0px;
+}
 
 li a{font-style: none;text-decoration: none;color: var(--first);transition: 0.5s ease;}
 li a:hover{color: #ffaaaa;}
 
 footer *{list-style: none;}
+
+
+@media screen and (max-width: 768px){
+    footer{
+        max-height: max-content;
+        flex-direction: column;
+        font-size: small;
+        padding: 20px;
+    }
+    footer > div{
+        width: 100%;
+
+    }
+
+    footer>div:is(.socials) ul li{
+        margin: 5px 0px;
+        padding: 0;
+    }
+    footer>div.Menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+}

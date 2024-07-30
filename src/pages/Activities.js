@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const Activities = () => {
+    const annual_activities = [];
+    const project_report = [];
   return (
     <main>
         <Header/>
@@ -17,20 +19,26 @@ const Activities = () => {
             <h2>Annual Activities</h2>
             <h4>For further detailed list of activities please check the doucuments given below</h4>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                {annual_activities.map(activity=>{
+                    return(
+                        <li>
+                            /Something something
+                        </li>
+                    )
+                })}
             </ul>
         </div>
         <div className='Project-Reports'>
             <h2>Project Reports</h2>
             <h4>For further detailed list of our Project Reports please check the doucuments given below</h4>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                {project_report.map(activity=>{
+                    return(
+                        <li>
+                            /Something something
+                        </li>
+                    )
+                })}
             </ul>
         </div>
         <div></div>

@@ -7,7 +7,7 @@
 }
 
 .member .ourMember ul li{
-    background-color: aqua;
+    background-color: #00000011;
     margin: 10px;
     width: 400px;
     height: 100px;
@@ -36,4 +36,23 @@
 
 .member .newMember{
     text-align: left;
+    margin: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .member .ourMember ul li.newMember{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .member .ourMember ul li.newMember button{
+        background-color: var(--third);
+        color: var(--first);
+        width: 30vw;
+        height: 5vh;
+        border-radius: 20px;
+    }
+    .member div.newMember{
+        margin: 30px;
+    }
 }
