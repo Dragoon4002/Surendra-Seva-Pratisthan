@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header.js'
 import './HomePage.css'
 import Footer from '../components/Footer.js'
+import image from '../images/1.1.jpg';
 
 const HomePage = () => {
   const whatWeDo = [
@@ -20,7 +21,12 @@ const HomePage = () => {
   return (
     <main>
       <Header/>
-      <div className='title'>
+      <div
+        className="title"
+        style={{
+          backgroundImage: `linear-gradient(to right, #ffffff 0%, #ffffff88 40%, #ffffff00 50%), url(${image})`
+        }}
+      >
         <span>
           <h3>Our Mission</h3>
           <h1>Change the lives of Those who have no Hope</h1>

@@ -12,7 +12,7 @@ header{
 }
 
 header .logo{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
 }
 
@@ -25,8 +25,8 @@ header nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 40vw;
-    font-size: 20px;
+    width: 35vw;
+    font-size: 15px;
     font-weight: 600;
 }
 li a{font-style: none;text-decoration: none;color: white;transition: 0.5s ease;}
@@ -67,7 +67,7 @@ header button{
     }
 
     header nav{
-        flex-direction: column;
+        flex-direction: column-reverse;
         position: absolute;
         background-color: var(--second);
         justify-content: space-evenly;

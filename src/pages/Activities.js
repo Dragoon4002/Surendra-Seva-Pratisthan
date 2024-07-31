@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import './Activities.css'
 
 const Activities = () => {
     const annual_activities = [];
     const project_report = [];
   return (
-    <main>
+    <main className='activities'>
         <Header/>
         <div className='Programme-Activities'>
             <h2>Programme Activities</h2>
