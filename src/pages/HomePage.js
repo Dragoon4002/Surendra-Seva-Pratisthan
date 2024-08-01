@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header.js'
 import './HomePage.css'
 import Footer from '../components/Footer.js'
-import image from '../images/1.1.jpg';
+// import image from '../images/1.1.jpg';
 
 const HomePage = () => {
   const whatWeDo = [
@@ -23,9 +23,9 @@ const HomePage = () => {
       <Header/>
       <div
         className="title"
-        style={{
-          backgroundImage: `linear-gradient(to right, #ffffff 0%, #ffffff88 40%, #ffffff00 50%), url(${image})`
-        }}
+        // style={{
+        //   backgroundImage: `linear-gradient(to right, #ffffff 0%, #ffffff88 40%, #ffffff00 50%), url(${image})`
+        // }}
       >
         <span>
           <h3>Our Mission</h3>

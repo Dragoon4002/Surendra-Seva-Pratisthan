@@ -80,5 +80,5 @@ header button{
         height: 70vh;
         flex-direction: column;
     }
-    header nav.selected{left: 0;}
+    header nav.selected{left: 0;flex-direction: column-reverse;justify-content: space-evenly;}
 }

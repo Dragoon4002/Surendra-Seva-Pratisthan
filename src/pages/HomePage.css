@@ -2,6 +2,7 @@
     color: var(--third);
     height: 80vh;
     padding: 100px 50px;
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff88 40%, #ffffff00 50%), url('../images/1.1.jpg');
     text-align: left;
     display: block;
     font-size: 25px;
@@ -64,8 +65,19 @@ button.Donate{
 
 
 @media screen and (max-width: 768px){
-    .title{font-size: small;height: 70vh;display: flex;justify-content: end;padding: 0;background-image: linear-gradient( #ffffff00 30%, #ffffff88 50%, #ffffff 100%); color: var(--third);}
-    .title span{width: 100%;height: 30vh;align-self: flex-end;margin: 20px;}
+    .title{
+        font-size: small;
+        height: 70vh;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        background-image: linear-gradient(to top, #ffffffff 0%, #ffffff88 40%, #ffffff00 50%), url('../images/1.1.jpg');
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: top center;
+        color: var(--third);
+    }
+    .title span{width: 100%;height: 40vh;align-self: flex-end;margin: 20px;}
     .title span button{width: 50vw;padding: 10px 0px;max-width: 50%;font-size: small;}
     .aboutUs{flex-direction: column-reverse;font-size: small;}
     .aboutUs .banner{height: 30vh;}
