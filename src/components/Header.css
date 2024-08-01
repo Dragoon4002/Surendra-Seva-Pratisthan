@@ -17,7 +17,8 @@ header .logo{
 }
 
 header nav{display: flex;flex-direction: row;justify-content: space-between;width: 50vw;align-items: center;}
-header .hamburger {display: flex;flex-direction: row;width: 55vw;}/*55 will be reduced to 50 when span will be changed to display none*/
+header .hamburger {display: flex;flex-direction: row;width: 50vw;}
+header .hamburger nav{display: flex;flex-direction: row;justify-content: space-between;}
 header .hamburger .hamburger-icon{display: none;flex-direction: column;justify-content: space-evenly;}
 header .hamburger .hamburger-icon span{background-color: var(--third);height: 5px;width: 30px;display: block;transition: 0.5s ease;}
 
