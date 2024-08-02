@@ -1,93 +1,105 @@
-import React from 'react'
-import './Member.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import React from 'react';
+import './Member.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import deepakSarkarImage from '../images/members/Deepak Sarkar.jpg';
+import drGourangaChBaraiImage from '../images/members/Dr. Gouranga Ch. Barai.jpg';
+import pradeepKumarBoseImage from '../images/members/Pradeep Kumar Bose.jpg';
+import niranjanBeruImage from '../images/members/Niranjan Beru.jpg';
+import bananiBeruImage from '../images/members/Banani Beru.jpg';
+import soumenBaraiImage from '../images/members/Soumen Barai.jpg';
+import santoshBaraiImage from '../images/members/Santosh Barai.jpg';
+import sheuliBaraiImage from '../images/members/Sheuli Barai.jpg';
+import ratanMondalImage from '../images/members/Ratan Mondal.jpg';
+import prabirKarmakarImage from '../images/members/Prabir Karmakar.jpg';
+import bharatChRoyImage from '../images/members/Bharat Ch. Roy.jpg';
+
+import becomeAMember from '../images/members/become a member.png';
 
 const Member = () => {
-  const year= '2015-16';
+  const year = '2015-16';
   const body = [
     {
-      src: '',
+      src: deepakSarkarImage,
       name: 'Deepak Sarkar',
       designation: 'Chairman'
     },
     {
-      src: '',
+      src: drGourangaChBaraiImage,
       name: 'Dr. Gouranga Ch. Barai',
       designation: 'President'
     },
     {
-      src: '',
+      src: pradeepKumarBoseImage,
       name: 'Pradeep Kumar Bose',
       designation: 'Vice President'
     },
     {
-      src: '',
+      src: niranjanBeruImage,
       name: 'Niranjan Beru',
       designation: 'Secretary'
     },
     {
-      src: '',
+      src: bananiBeruImage,
       name: 'Banani Beru',
       designation: 'Assistant Secretary'
     },
     {
-      src: '',
+      src: soumenBaraiImage,
       name: 'Soumen Barai',
       designation: 'Treasurer'
     },
     {
-      src: '',
+      src: santoshBaraiImage,
       name: 'Santosh Barai',
       designation: 'Member'
     },
     {
-      src: '',
+      src: sheuliBaraiImage,
       name: 'Sheuli Barai',
       designation: 'Member'
     },
     {
-      src: '',
+      src: ratanMondalImage,
       name: 'Ratan Mondal',
       designation: 'Member'
     },
     {
-      src: '',
+      src: prabirKarmakarImage,
       name: 'Prabir Karmakar',
       designation: 'Member'
     },
     {
-      src: '',
+      src: bharatChRoyImage,
       name: 'Bharat Ch. Roy',
       designation: 'Member'
     }
   ];
-  
+
   return (
     <main className='member'>
-        <Header/>
-        <div className='ourMember'>
-          <h2>Governing Body of {year}</h2>
-          <hr/>
-          <ul>
-            {body.map((member,index)=>{
-              return(
-                <li key={index}>
-                  <img src={member.src} alt="members' image"/>
-                  <div className='designation'>
-                    <p>{member.name}</p>
-                    <p>{member.designation}</p>
-                  </div>
-                </li>
-              )
-            })}
-            <li className='newMember'>
-              <h3>Want to become a member?</h3>
-              <button>Join Now</button>
+      <Header />
+      <div className='ourMember'>
+        <h2>Governing Body of {year}</h2>
+        <hr />
+        <ul>
+          {body.map((member, index) => (
+            <li key={index}>
+              {member.src && <img src={member.src} alt={member.name} />}
+              <div className='designation'>
+                <p>{member.name}</p>
+                <p>{member.designation}</p>
+              </div>
             </li>
-          </ul>
-        </div>
-        <div className='newMember'>
+          ))}
+          <li className='newMember'>
+            <h3>Want to become a member?</h3>
+            <button>Join Now</button>
+          </li>
+        </ul>
+      </div>
+      <img src={becomeAMember} alt='become a member'/>
+      <div className='newMember'>
         <h3>Membership</h3>
         <ol>
           <li>
@@ -125,11 +137,10 @@ const Member = () => {
             <p>For an act of expulsion or termination, no such member shall be entitled to prefer any claim for compensation or damage, even if improved on a subsequent date that such act of expulsion or termination was wrongful and/or unlawful.</p>
           </li>
         </ol>
-        </div>
-        <div className=''></div>
-        <Footer/>
+      </div>
+      <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default Member
+export default Member;
