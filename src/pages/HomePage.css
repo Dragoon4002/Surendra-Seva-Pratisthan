@@ -63,6 +63,13 @@ button.Donate{
 
 .banner li{border-left: 5px solid var(--first) !important;padding:2px 0px 10px 10px;}
 
+.whatWeDo{
+    display: flex;
+    flex-direction: column;
+}
+
+.whatWeDo div{display: flex;flex-direction: row;}
+.whatWeDo ol{margin-left:50px;max-width: 500px;}
 
 @media screen and (max-width: 768px){
     .title{
@@ -83,4 +90,9 @@ button.Donate{
     .aboutUs .banner{height: 30vh;}
     .aboutUs .banner ul{height: 30vh;}
     .aboutUs .Text{padding: 20px;}
+
+    .whatWeDo{font-size: small;padding: 20px;}
+    .whatWeDo h2{padding: 10px 0px;}
+    .whatWeDo> div{flex-direction: column;}
+    .whatWeDo> div ol{margin-left: 25px;}
 }

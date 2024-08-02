@@ -75,12 +75,14 @@ const HomePage = () => {
       <hr/>
       <div className='whatWeDo'>
         <h2>What We Do</h2>
-        <img src={image1} alt='girl in swing'/>
-        <ol>
-          {whatWeDo.map((task, index) => (
-            <li key={index}>{task}</li>
-          ))}
-        </ol>
+        <div className='whatWeDo_content'>
+          <img src={image1} alt='girl in swing'/>
+          <ol>
+            {whatWeDo.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ol>
+        </div>
       </div>
       <Footer/>
     </main>
