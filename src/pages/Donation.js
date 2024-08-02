@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const Donation = () => {
   return (
-    <main>
+    <main className='donation'>
         <Header/>
         <Footer/>
     </main>

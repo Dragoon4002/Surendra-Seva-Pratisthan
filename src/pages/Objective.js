@@ -2,6 +2,9 @@ import React from 'react'
 import './Objective.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import certificateOfRegistrationOfSociety from '../images/aboutUs/certificate1.jpg'
+import certificateOfForeignContribution1 from '../images/aboutUs/certificate2.jpg'
+import certificateOfForeignContribution2 from '../images/aboutUs/certificate3.jpg'
 
 const Objective = () => {
   return (
@@ -24,9 +27,9 @@ Granted by the Commissioner of Income Tax kol- XX. KOLKATA<br/>
 Approval Of FCRA (Registration No – 146990125) Nature – Social. Valid – 20/10/2018<br/>
             </strong></p>
             <div className='certificates'>
-                <img className='c1' alt='certificate'/>
-                <img className='c2' alt='certificate'/>
-                <img className='c3' alt='certificate'/>
+                <img className='c1' src={certificateOfRegistrationOfSociety} alt='certificate'/>
+                <img className='c2' src={certificateOfForeignContribution1} alt='certificate'/>
+                <img className='c3' src={certificateOfForeignContribution2} alt='certificate'/>
                 <p>Certificate of Registration of Society</p>
                 <p>Registration under Foreign Contribution (Regulation) Act, 2010</p>
             </div>

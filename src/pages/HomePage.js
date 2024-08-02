@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header.js'
 import './HomePage.css'
 import Footer from '../components/Footer.js'
-// import image from '../images/1.1.jpg';
+import image1 from '../images/homepage/whatwedo.jpg'
 
 const HomePage = () => {
   const whatWeDo = [
@@ -75,6 +75,7 @@ const HomePage = () => {
       <hr/>
       <div className='whatWeDo'>
         <h2>What We Do</h2>
+        <img src={image1} alt='girl in swing'/>
         <ol>
           {whatWeDo.map((task, index) => (
             <li key={index}>{task}</li>
