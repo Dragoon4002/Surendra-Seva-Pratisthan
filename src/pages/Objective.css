@@ -17,3 +17,44 @@
 .list *:not(h2){margin: 20px 0px;}
 .list{margin: 40px 0px;}
 ol{list-style:decimal;}
+
+@media screen and (max-width: 768px){
+    .certificates {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr 1fr 6fr 6fr 1fr;
+        grid-template-areas: 
+            "c1"
+            "p1"
+            "c2"
+            "c3"
+            "p2";
+        gap: 10px; /* Adjust the gap as needed */
+    }
+    
+    .certificates .c1 {
+        grid-area: c1;
+    }
+    
+    .certificates .c2 {
+        grid-area: c2;
+    }
+    
+    .certificates .c3 {
+        grid-area: c3;
+    }
+    
+    .certificates p:nth-of-type(1) {
+        grid-area: p1;
+    }
+    
+    .certificates p:nth-of-type(2) {
+        grid-area: p2;
+    }
+    
+    .certificates img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+    .list{font-size: small;}
+}

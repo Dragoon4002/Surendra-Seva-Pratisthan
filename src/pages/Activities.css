@@ -1,1 +1,19 @@
-main.activities > div{text-align: left;}
+main.activities > div{text-align: left;padding: 20px 50px;}
+main.activities > div.Programme-Activities > div.images{display: flex;flex-direction: row;}
+main.activities > div.Programme-Activities img{height: 80vh;width: 49vw;}
+main.activities > div:is(.Annual-Activities,.Project-Reports) ul{display: flex;flex-direction: row;list-style: none;flex-wrap: wrap;}
+main.activities > div:is(.Annual-Activities,.Project-Reports) li{
+    
+    width: 400px;
+    margin: 20px;padding: 10px;
+    background-color: #efefef;
+}
+main.activities > div:is(.Annual-Activities,.Project-Reports) li p{margin-left: 10px;}
+main.activities > div:is(.Annual-Activities,.Project-Reports) li a{color: var(--third);display: flex;flex-direction: row;align-items: center;font-weight: 700;}
+
+@media screen and (max-width: 768px){
+    main.activities > div{padding: 5px 20px;}
+    main.activities > div.Programme-Activities > div.images{display: flex;flex-direction: column;}
+    main.activities > div.Programme-Activities img{height: auto;width: 100%;}
+    main.activities > div:is(.Annual-Activities,.Project-Reports) li{margin: 5px;}
+}
