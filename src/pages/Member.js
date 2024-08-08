@@ -94,7 +94,7 @@ const Member = () => {
           ))}
           <li className='newMember'>
             <h3>Want to become a member?</h3>
-            <button>Join Now</button>
+            <p>Contact the number given at the bottom of the page</p>
           </li>
         </ul>
       </div>
