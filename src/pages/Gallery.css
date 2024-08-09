@@ -1,0 +1,16 @@
+main.gallery .photogallery ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+main.gallery .photogallery ul img{
+    width: 300px;
+    margin: 30px;
+}
+
+@media screen and (max-width: 768px){
+    main.gallery .photogallery ul{gap: 10px;padding: 20px;}
+    main.gallery .photogallery ul img{width: 180px;margin: 0;}
+}
